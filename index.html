@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <style>
+      .container {
+        border: 4px solid rebeccapurple;
+        border-radius: 10px;
+        height: 350px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* flex-direction: row-reverse; */
+        flex-wrap: wrap;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 4px solid black;
+        border-radius: 5px;
+        background-color: orange;
+        text-align: center;
+        font-weight: bold;
+      }
+      /* Nav styles */
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+      }
+      nav {
+        display: flex;
+        background-color: olivedrab;
+        padding: 10px 20px;
+        border-radius: 10px;
+        justify-content: space-around;
+        margin-bottom: 10px;
+      }
+      .menu a {
+        margin-right: 10px;
+      }
+      main {
+        max-width: 1120px;
+        margin: auto;
+      }
+
+      /* login section */
+      .login-section {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .login-form {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .login-form input {
+        margin-top: 10px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menu">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Blogs</a>
+        </div>
+        <a href="">Login</a>
+      </nav>
+    </header>
+    <main>
+      <section class="login-section">
+        <h2 style="text-align: center">Please Login</h2>
+        <form class="login-form" action="">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            id=""
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            id=""
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Your Password"
+            id=""
+            required
+          />
+          <input type="submit" value="Login" />
+        </form>
+      </section>
+
+      <section>
+        <h2>Flexbox Layout</h2>
+        <div class="container">
+          <div class="box">Box0001</div>
+          <div class="box">Box0002</div>
+          <div class="box">Box0003</div>
+          <div class="box">Box0004</div>
+          <div class="box">Box0005</div>
+          <div class="box">Box0006</div>
+          <div class="box">Box0007</div>
+          <div class="box">Box0008</div>
+          <div class="box">Box0009</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
